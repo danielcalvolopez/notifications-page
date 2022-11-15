@@ -1,0 +1,49 @@
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--Very-light-grayish-blue);
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.notification .notification-time {
+  font-size: 15px;
+  color: var(--Grayish-blue);
+}
+
+.notification img {
+  object-fit: cover;
+  width: 50px;
+}
+
+.notification .notification-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.notification .notification-content div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+
+.notification .notification-content .name {
+  font-weight: bold;
+}
+.notification .notification-content .description {
+  color: var(--Grayish-blue);
+}
+.notification .notification-content .content {
+  color: var(--Dark-grayish-blue);
+  font-weight: bold;
+}
+
+.notification span {
+  background-color: var(--MyRed);
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}

@@ -1,8 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -14,10 +12,22 @@ body {
   --Grayish-blue: hsl(219, 14%, 63%);
   --Dark-grayish-blue: hsl(219, 12%, 42%);
   --Very-dark-blue: hsl(224, 21%, 14%);
+
+  background-color: var(--Light-grayish-blue-1);
 }
 
 p {
   font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+div {
+  margin: 0;
+  padding: 0;
 }
 
 code {
