@@ -16,7 +16,7 @@ const notifications = [
     avatar: "avatars/avatar-jacob-thompson.webp",
     name: "Jacob Thompson",
     description: "has joined your group",
-    content: "Chess Club",
+    contentclub: "Chess Club",
     time: "1 day ago",
   },
   {
@@ -31,7 +31,7 @@ const notifications = [
     avatar: "avatars/avatar-kimberly-smith.webp",
     name: "Kimberly Smith",
     description: "commented on your picture",
-    picture: "avatars/image-chess",
+    picture: "avatars/image-chess.webp",
     time: "1 week ago",
   },
   {
@@ -45,7 +45,7 @@ const notifications = [
     avatar: "avatars/avatar-anna-kim.webp",
     name: "Anna Kim",
     description: "left the group",
-    content: "Chess Club",
+    contentclub: "Chess Club",
     time: "2 weeks ago",
   },
 ];

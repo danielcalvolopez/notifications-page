@@ -21,7 +21,12 @@
 }
 
 .background .container .notifications-header h4 {
-  color: rgb(185, 185, 185);
+  color: rgb(158, 158, 158);
+}
+
+.background .container .notifications-header h4:hover {
+  color: var(--MyBlue);
+  cursor: pointer;
 }
 
 .background .container .notifications-header .title {
