@@ -1,10 +1,20 @@
 import React from "react";
+import notifications from "../data/notifications";
 import Notification from "./Notification";
 
 const NotificationsList = () => {
   return (
     <div>
-      <Notification />
+      {notifications.map(({ avatar, name, description, content, time }) => (
+        <Notification
+          key={name}
+          avatar={avatar}
+          name={name}
+          description={description}
+          content={content}
+          time={time}
+        />
+      ))}
     </div>
   );
 };

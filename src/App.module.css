@@ -10,6 +10,7 @@
   margin-top: 100px;
   max-width: 700px;
   border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(126, 125, 125, 0.1);
 }
 
 .background .container .notifications-header {
@@ -20,7 +21,7 @@
 }
 
 .background .container .notifications-header h4 {
-  color: rgb(140, 140, 140);
+  color: rgb(185, 185, 185);
 }
 
 .background .container .notifications-header .title {

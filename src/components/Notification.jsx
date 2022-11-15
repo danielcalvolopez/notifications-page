@@ -1,20 +1,19 @@
-import MarkAvatar from "./../avatars/avatar-mark-webber.webp";
 import classes from "./Notification.module.css";
 
-const Notification = () => {
+const Notification = ({ avatar, name, description, content, time }) => {
   return (
     <div className={classes.notification}>
-      <img src={MarkAvatar} alt="mark" />
+      <img src={avatar} alt="mark" />
       <div>
         <div className={classes["notification-content"]}>
           <div>
-            <p className={classes.name}>Mark Webber</p>
-            <p className={classes.description}>reacted to your recent post</p>
-            <p className={classes.content}>My first tournament today!</p>
+            <p className={classes.name}>{name}</p>
+            <p className={classes.description}>{description}</p>
+            <p className={classes.content}>{content}</p>
+            <span></span>
           </div>
-          <span></span>
         </div>
-        <p className={classes["notification-time"]}>1m ago</p>
+        <p className={classes["notification-time"]}>{time}</p>
       </div>
     </div>
   );

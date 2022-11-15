@@ -3,8 +3,10 @@
   align-items: center;
   gap: 20px;
   background-color: var(--Very-light-grayish-blue);
-  border-radius: 7px;
+  border-radius: 8px;
   padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(69, 68, 68, 0.1);
 }
 
 .notification .notification-time {
@@ -26,6 +28,7 @@
 .notification .notification-content div {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 4px;
   margin-bottom: 3px;
 }
@@ -46,4 +49,5 @@
   border-radius: 50%;
   width: 7px;
   height: 7px;
+  margin-left: 5px;
 }
