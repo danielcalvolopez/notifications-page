@@ -45,6 +45,10 @@
   width: 50px;
 }
 
+.notification .image:hover {
+  cursor: pointer;
+}
+
 .notification .notification-content {
   display: flex;
   align-items: center;
