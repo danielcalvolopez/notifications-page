@@ -1,12 +1,18 @@
 import { createContext, useState } from "react";
+import notifications from "../data/notifications";
 
-export const NotificationsContext = createContext();
+const NotificationsInitialState = { notifications: [] };
+
+export const NotificationsContext = createContext(NotificationsInitialState);
 
 const NotificationsContextProvider = ({ children }) => {
-  const [read, setRead] = useState(false);
+  const [AllRead, setAllRead] = useState(false);
+  const [noti, setNoti] = useState(notifications);
 
   return (
-    <NotificationsContext.Provider>{children}</NotificationsContext.Provider>
+    <NotificationsContext.Provider value={noti}>
+      {children}
+    </NotificationsContext.Provider>
   );
 };
 

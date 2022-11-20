@@ -6,6 +6,7 @@ const notifications = [
     content: "My first tournament today!",
     time: "1m ago",
     read: false,
+    id: 1,
   },
   {
     avatar: "avatars/avatar-angela-gray.webp",
@@ -13,6 +14,7 @@ const notifications = [
     description: "followed you",
     time: "5m ago",
     read: false,
+    id: 2,
   },
   {
     avatar: "avatars/avatar-jacob-thompson.webp",
@@ -21,6 +23,7 @@ const notifications = [
     contentclub: "Chess Club",
     time: "1 day ago",
     read: false,
+    id: 3,
   },
   {
     avatar: "avatars/avatar-rizky-hasanuddin.webp",
@@ -30,6 +33,7 @@ const notifications = [
       "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
     time: "5 days ago",
     read: true,
+    id: 4,
   },
   {
     avatar: "avatars/avatar-kimberly-smith.webp",
@@ -38,6 +42,7 @@ const notifications = [
     picture: "avatars/image-chess.webp",
     time: "1 week ago",
     read: true,
+    id: 5,
   },
   {
     avatar: "avatars/avatar-nathan-peterson.webp",
@@ -46,6 +51,7 @@ const notifications = [
     content: "5 end-game strategies to increase your win rate",
     time: "2 weeks ago",
     read: true,
+    id: 6,
   },
   {
     avatar: "avatars/avatar-anna-kim.webp",
@@ -54,6 +60,7 @@ const notifications = [
     contentclub: "Chess Club",
     time: "2 weeks ago",
     read: true,
+    id: 7,
   },
 ];
 
