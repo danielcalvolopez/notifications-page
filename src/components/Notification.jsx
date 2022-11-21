@@ -9,10 +9,15 @@ const Notification = ({
   picture,
   message,
   contentclub,
+  read,
 }) => {
   return (
     <>
-      <div className={classes.notification}>
+      <div
+        className={
+          read ? classes["notification-read"] : classes["notification-unread"]
+        }
+      >
         <div className={classes.wrapper}>
           <img className={classes.avatar} src={avatar} alt="mark" />
           <div>
@@ -25,7 +30,7 @@ const Notification = ({
                 ) : (
                   <p className={classes.content}>{content}</p>
                 )}
-                <span></span>
+                {!read && <span></span>}
               </div>
             </div>
             <p className={classes["notification-time"]}>{time}</p>

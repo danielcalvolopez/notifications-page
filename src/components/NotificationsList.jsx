@@ -1,11 +1,13 @@
-import React from "react";
-import notifications from "../data/notifications";
+import React, { useContext } from "react";
+import { NotificationsContext } from "../context/NotificationsContext";
 import Notification from "./Notification";
 
-const NotificationsList = () => {
+const NotificationsList = ({ read }) => {
+  const notiCtx = useContext(NotificationsContext);
+
   return (
     <div>
-      {notifications.map(
+      {notiCtx.map(
         ({
           avatar,
           name,
@@ -26,6 +28,7 @@ const NotificationsList = () => {
             picture={picture}
             message={message}
             contentclub={contentclub}
+            read={read}
           />
         )
       )}
